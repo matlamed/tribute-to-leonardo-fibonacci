@@ -1,0 +1,19 @@
+{
+  "name": "tribute-to-leonardo-fibonacci",
+  "version": "1.0.0",
+  "description": "A simple tribute page to Leonardo Fibonacci",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "author": "Mat Lamed",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

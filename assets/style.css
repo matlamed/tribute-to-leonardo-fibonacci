@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	word-wrap: break-word;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+h1,h2{
+	color: #002356;
+}
+
+#container{
+	width: 100vw;
+	min-height: 100vh;
+	display: grid;
+	grid-template-areas: ". fbtext fbpicture .";
+	grid-template-columns: auto repeat(2,40vw) auto;
+}
+
+#fibonacci-text{
+	grid-area: fbtext;
+	justify-self: center;
+	align-self: center;
+}
+
+#fibonacci-text #name{
+	text-align: center;
+}
+
+#fibonacci-text #description{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#fibonacci-text #journey{
+	background-color: #CBCBCB;
+	padding-top: 20px;
+	padding-bottom: 50px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+#fibonacci-text #journey h2{
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+#fibonacci-text #journey ul{
+	
+}
+
+#fibonacci-picture{
+	grid-area: fbpicture;
+	justify-self: center;
+	align-self: center;
+}
+
+#fibonacci-picture img{
+	max-width: 100%;
+	height: auto;
+}
+
+@media (max-width: 860px){
+	#container{
+		width: 100vw;
+		min-height: 100vh;
+		display: grid;
+		grid-template-areas: ". fbpicture ." ". fbtext .";
+		grid-template-columns: auto 40vw auto;
+	}
+}
